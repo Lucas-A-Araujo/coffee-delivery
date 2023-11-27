@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 
 import { useCart } from '../../hooks/useCart'
 import { Aside, Container } from './styles'
+import LogoImg from '../../../public/images/logo.svg'
 
 export function Header() {
   const { cart } = useCart()
@@ -10,7 +11,7 @@ export function Header() {
   return (
     <Container>
       <Link to="/">
-        <img src="/logo.svg" alt="Coffee Delivery" />
+        <img src={LogoImg} alt="Coffee Delivery" />
       </Link>
 
       <Aside>
